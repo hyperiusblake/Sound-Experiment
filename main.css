@@ -1,39 +1,45 @@
 body {
     height: 100%;
     margin: 0;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
+    color: rgba(255, 255, 255, 0.928);
+    background-color: black;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Header */
-.header-img {
-    padding: 60px 30px;
-    background-color: rgb(235, 162, 54);
-}
-
 .header {
-    background-color: aquamarine;
     overflow: hidden;
-    padding: 10px 5px;
+    padding: 15px 0px 15px;
+    color: rgba(255, 255, 255, 0.921);
 }
 
-.header-right {
-    float: right;
+.header-container {
+  background-image: url(https://usagif.com/wp-content/uploads/gif/outerspace-6.gif);
+  background-position-y: 80%;
+}
+
+
+  .header-link a {
+    text-align: center;
   }
 
 .header a {
-    float: left;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 12px;
+    padding: 20px;
     text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
+    font-size: 24px; 
+    line-height: 35px;
     border-radius: 4px;
   }
 
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
   }
   
   .header a:hover {
@@ -45,33 +51,58 @@ body {
     background-color: dodgerblue;
     color: white;
   }
-
+ 
+/* Body */
 .base {
-    color: black;
     position: absolute;
     display: contents;
 }
-.band-shot, 
-.hyperius {
-    width: 100%;
+.band-shot {
+    width: 50%;
     height: auto;
 }
 
-.footer {
+.tagline {
+  font-size: 200%;
+}
+
+.hyperius {
+   width: 50%;
+   height: 50%;
+   display: inline-block;
+}
+
+.band-bio p, .self-bio p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.self-bio {
+  float: left;
+}
+
+/* Footer */
+.social-bar {
   position: fixed;
-  left: 0;
-  bottom: 0;
+  right: 0;
+  top: 0;
   width: 100%;
-  background-color: red;
-  color: white;
   text-align: center;
   height: 60px;
+}
+
+.social-media > a > img {
+    height: 60px;
+    width: 60px;
+    padding: 15px 10px;
+    opacity: 40%;
+    float: right;
 }
 
 @media screen and (max-width: 600px) {
 
     body {
-        padding-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     .header-img {
@@ -83,16 +114,33 @@ body {
       display: block;
       text-align: left;
     }
-    
-    .header-right {
-      float: none;
-    }
 
+    .logo {
+      height: auto;
+    max-width: 100%;
+    position: relative;
+    top: 65px;
+    }
+    
     .header a.logo {
         text-align: center;
     }
 
-    .footer {
+
+    .header-link a {
+      text-align: center;
+    }
+
+    .hyperius {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+     display: block;
+   }
+
+    .social-media > a > img {
         height: 40px;
+        width: 40px;
+        padding: 15px 10px;
     }
   }
