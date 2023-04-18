@@ -57,9 +57,23 @@ body {
     position: absolute;
     display: contents;
 }
+
+
+.page-title {
+  font-weight: bolder;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
 .band-shot {
     width: 50%;
     height: auto;
+}
+
+.contact-info {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .tagline {
@@ -81,23 +95,15 @@ body {
   float: left;
 }
 
-/* Footer */
-.social-bar {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  height: 60px;
+.shows {
+  font-size: 11px;
 }
 
-.social-media > a > img {
-    height: 60px;
-    width: 60px;
-    padding: 15px 10px;
-    opacity: 40%;
-    float: right;
+.social {
+  height: 171px;
+  width: 171px;
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -138,9 +144,4 @@ body {
      display: block;
    }
 
-    .social-media > a > img {
-        height: 40px;
-        width: 40px;
-        padding: 15px 10px;
-    }
   }
